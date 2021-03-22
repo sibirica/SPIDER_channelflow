@@ -3,7 +3,7 @@ function [Xi, lambda, best_term, lambda1] = SparseReg(Theta, char_sizes, valid_s
 % compute sparse regression on 0 = Theta * Xi
 
     % read options
-    if nargin>4
+    if nargin>3
         if isfield(opts,'threshold')
             threshold = opts.threshold;
         else
