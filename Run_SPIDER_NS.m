@@ -69,7 +69,7 @@ opts.gamma = 3; opts.epsilon = 0.01;
 % Can comment this out if data is loaded
 
 [Q, P, H, char_sizes, valid_single, lib_names] = ...
-         SPIDR_NS(term_names, N_d, N_h, reg_opts);
+         SPIDER_NS(term_names, N_d, N_h, reg_opts);
      
 %% ----------------------------------------------------------------------
 %                               REGRESSION

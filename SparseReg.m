@@ -132,14 +132,14 @@ function [Xi, lambda, best_term, lambda1] = SparseReg(Theta, char_sizes, valid_s
          end
          if (Y<=gamma) || (threshold ~= "multiplicative")
             smallinds(I) = 1;
-            if sum(smallinds==0)==1
-               break;
-            end
             Xi(I) = 0;
             [~,~,V] = svd(Theta(:, smallinds==0));
             Xi(smallinds==0) = V(:,end);
             lambda = norm(Theta*Xi);
             lambdas(i+1) = lambda;
+            if sum(smallinds==0)==1
+                break;
+            end
          else
             Y, I
             break
