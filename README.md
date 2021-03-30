@@ -4,7 +4,7 @@ This is an open-source repository of the MATLAB code used in the paper Gurevich,
 This code illustrates the sparse physics-informed discovery of empirical relations (SPIDER) algorithm, which is a general framework for robust identification of a complete model in terms of a system of partial differential equations and algebraic equations, comprising both bulk equations and boundary conditions. Input data representing a numerical simulation of a turbulent channel flow is taken from the Johns Hopkins University turbulence database: http://turbulence.pha.jhu.edu/Channel_Flow.aspx.
 
 ## Running the code
-To get started, install Turbmat from https://github.com/idies/turbmat in order to be able to query the JHU turbulence database. Then, you may execute the main script *Run_SPIDER_NS.mat* to begin downloading the data and run the sparse regression from the Navier-Stokes equation (this may take some hours the first time before the data has been permanently saved locally). The purpose of each .mat script is explained below:
+To get started, install Turbmat from https://github.com/idies/turbmat in order to be able to query the JHU turbulence database. Then, you may execute the main script *Run_SPIDER_NS.mat* to begin downloading the data and run the algorithm (this may take some hours the first time before the data has been permanently saved locally). The purpose of each .mat script is explained below:
 
 **Run_SPIDER_NS.mat** Main script for sparse regression, specifying various options in the algorithm. In particular, changing *mode* between "NS", "div", and "BC" allows for identification of the rank-1 and rank-0 equations and the boundary conditions, respectively.
 
@@ -18,7 +18,7 @@ To get started, install Turbmat from https://github.com/idies/turbmat in order t
 
 **diff_dim.mat** Helper function for computing central finite differences of boundary terms.
 
-**pullPressure.mat, pullVelocity.mat** Helper functions for loading velocity and pressure data from the JHU database.
+**pullPressure.mat, pullVelocity.mat** Helper functions for loading velocity and pressure data from the JHU database. Please use your authorization token here (see http://turbulence.pha.jhu.edu/authtoken.aspx).
 
 **LegendrePoly.mat, weight_3d.mat, etc.** Helper functions for computing Legendre polynomials and building weight functions over an integration domain.
 
