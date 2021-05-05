@@ -1,5 +1,5 @@
 # SPIDER_channelflow
-This is an open-source repository of the MATLAB code used in the paper Gurevich, Daniel R., Patrick A. K. Reinbold, and Roman O. Grigoriev, [*Learning fluid physics from highly turbulent data using sparse physics-informed discovery of empirical relations (SPIDER).* arXiv preprint arXiv:2105.00048 (2021)](https://arxiv.org/abs/2105.00048).
+This is an open-source repository of the MATLAB code used in the paper Gurevich, Daniel R., Patrick A. K. Reinbold, and Roman O. Grigoriev, [*Learning fluid physics from highly turbulent data using sparse physics-informed discovery of empirical relations (SPIDER).*](https://arxiv.org/abs/2105.00048) arXiv preprint arXiv:2105.00048 (2021).
 
 This code illustrates the sparse physics-informed discovery of empirical relations (SPIDER) algorithm, which is a general framework for robust identification of a complete model in terms of a system of partial differential equations and algebraic equations, comprising both bulk equations and boundary conditions. Input data representing a numerical simulation of a turbulent channel flow is taken from the Johns Hopkins University turbulence database: http://turbulence.pha.jhu.edu/Channel_Flow.aspx.
 
