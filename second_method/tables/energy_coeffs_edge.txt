@@ -1,4 +1,0 @@
- & $\sigma$  & $ \partial_t E $  & $ u_i \nabla_i p $  & $ \nabla_i(u_i E) $  & $ (\nabla_i u_j)(\nabla_i u_j) $  & $ \nabla^2 E $ \\ \hline
-$\bar{c}_n$& 10\% & 1& 1.00 & 0.99418 & 0.0000404 & -0.0000473  \\ \hline 
-$s_n$& 10\% & $ 5\!\times\! 10^{-3} $ & $ 2\!\times\! 10^{-2} $ & $ 3\!\times\! 10^{-5} $ & $ 5\!\times\! 10^{-7} $ & $ 7\!\times\! 10^{-7} $  \\ \hline 
-$\chi_n$& 10\% & 0.69 & 0.27 & 0.75 &  1 & 0.76  \\ \hline 
